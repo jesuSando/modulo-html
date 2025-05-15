@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visualizador Escalado</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .wrapper {
+      width: 1182px;
+      height: 681px;
+      overflow: hidden;
+      position: absolute;
+      top: 313px;
+      left: 68px;
+      bottom: 86px;
+    }
+
+    iframe {
+      position: absolute;
+      width: 1920px;
+      height: 1080px;
+      transform-origin: top left;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <iframe id="marco-modulo" src="modulo.html"></iframe>
+  </div>
+
+  <script>
+    function escalarIframe() {
+      const iframe = document.getElementById("marco-modulo");
+      const escalaX = 1182 / 1920;
+      const escalaY = 681 / 1080;
+      const escala = Math.min(escalaX, escalaY);
+      iframe.style.transform = `scale(${escala})`;
+    }
+
+    window.addEventListener("load", escalarIframe);
+    window.addEventListener("resize", escalarIframe);
+  </script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<style>
+    .fondo {
+      height: 100vh;
+      width: 100vw;
+      background-image: url("./img/fond_roj.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+    }
+  
+    .contenido{
+      display: flex;
+      justify-content: space-between;
+      height: 100%;
+    }
+  
+    .col-izq{
+      width: 60%;
+      padding: 20px;
+    }
+    .col-der{
+      width: 40%;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+    }
+    
+    .cards{
+      display: flex;
+      gap: 30px; 
+      justify-content: center;
+    }
+  
+    .card1-full, .car2-full {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Centra el contenido horizontalmente */
+    }
+  
+    .card1 {
+      background-color: transparent;
+      border: 1px solid white;
+      border-radius: 20px;
+      padding: 30px 20px;
+      text-align: center;
+      color: white;
+      width: 300px;
+      box-sizing: border-box;
+      position: relative;
+    }
+  
+    .card1 h2 {
+      margin: 10px 0 5px;
+    }
+  
+    .card1 p {
+      margin: 4px 0;
+      font-size: 14px;
+    }
+  
+    .cuadradoQR {
+      margin: 20px 0;
+    }
+  
+    .cuadradoQR img {
+      width: 180px;
+      height: 180px;
+      background-color: #fff;
+    }
+  
+    .card1 link {
+      font-weight: bold;
+      margin-top: 10px;
+      color: white;
+    }
+  
+    .flecha {
+      width: 30px;
+      margin-top: 5px;
+    }
+  
+    .ir-sitio {
+      color: white;
+      font-size: 13px;
+      margin-top: 20px;
+      display: block;
+      text-align: center;
+    }
+  
+    .card2{
+      background-color: #fff;
+      border: 1px solid white;
+      border-radius: 20px;
+      padding: 30px 20px;
+      text-align: center;
+      color: red;
+      width: 300px;
+      box-sizing: border-box;
+      position: relative;
+    }
+  
+    .card2 h2 {
+      margin: 10px 0 5px;
+    }
+  
+    .card2 p {
+      margin: 4px 0;
+      font-size: 14px;
+    }
+  
+    .col-der {
+      display: flex;
+      align-items: center; /* Centra verticalmente */
+      justify-content: center; /* Centra horizontalmente */
+      height: 100%;
+    }
+  
+    .parrafo {
+      text-align: center;
+    }
+  </style>
+  
+  <div class="fondo">
+    <div class="contenido">
+      <div class="col-izq">
+        <div class="titulo"><h1>Ubicación Salas y Espacios</h1></div>
+        <div class="cards">
+          <div class="card1-full">
+            <div class="card1">
+              <h2 class="titulo-card">Educación UC / PDF</h2>
+              <p>Salas / Auditorio / Patio de la Virgen</p>
+              <p>Subdir. Desarrollo Estudiantil / OEPD</p>
+        
+              <div class="cuadradoQR">
+                <img src="./img/QR_edu.svg" alt="QR Educación UC">
+              </div>
+        
+              <img class="flecha" src="./img/Trazado 1857.svg" alt="Flecha" />
+              <div class="link">¡ESCANÉAME!</div>
+        
+            </div>
+            <a href="#" class="ir-sitio">Ir a sitio</a>
+          </div>
+        
+          <div class="car2-full">
+            <div class="card2">
+              <h2>San Joaquín</h2>
+              <p>Biblotecas / Hall Universitario / Salas</p>
+              <p>Facultades / Auditorios / Servicios</p>
+        
+              <div class="cuadradoQR">
+                <img src="./img/qr_san_j.svg" alt="QR sj">
+              </div>
+        
+              <img src="./img/Trazado 1867.svg" alt="" class="flecha">
+              <div class="link">¡ESCANÉAME!</div>
+        
+            </div>
+            <a href="#" class="ir-sitio">Ir a sitio</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-der">
+        <div class="parrafo">
+          <p>"Escanea los códigos QR</p>
+          <p>y revisa en tu celular la</p>
+          <p>información sobre lugares</p>
+          <p>y ubicaciones de nuestra</p>
+          <p>Facultad o del Campus</p>
+          <p>San Joaquín</p>
+        </div>
+      </div>
+    </div>
+  </div>
